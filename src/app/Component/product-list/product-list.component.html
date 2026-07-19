@@ -1,0 +1,9 @@
+<h2>מוצרים</h2>
+@for(p of products; track $index){
+<div class="product" (click)="openProduct(p)">
+  <h3>{{ p.name }}</h3>
+  <p>מחיר: {{ p.price }} ₪</p>
+  <p>{{p.description}}</p>
+</div>
+}
+

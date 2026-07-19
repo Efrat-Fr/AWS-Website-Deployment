@@ -1,0 +1,9 @@
+<h2>קטגוריות</h2>
+<ul>
+  @for(c of categories; track $index){
+  <li (click)="selectCategory(c.code)">
+    {{ c.name }}
+  </li>
+}
+</ul>
+
